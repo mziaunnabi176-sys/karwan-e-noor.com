@@ -1,0 +1,1074 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karwan Noor Umrah Group</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7f3;
+    color: #222;
+}
+
+header {
+    background: #063d2b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #d5ad50;
+}
+
+header h1 {
+    color: #e8c56b;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 8px;
+    letter-spacing: 2px;
+}
+
+.page {
+    display: none;
+    min-height: 70vh;
+}
+
+.page.active {
+    display: block;
+}
+
+.hero {
+    min-height: 500px;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1600&q=85");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #c9a344;
+    color: #102d20;
+    border: none;
+    padding: 13px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #e5c56d;
+}
+
+button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+.container {
+    max-width: 850px;
+    margin: 35px auto;
+    background: white;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+}
+
+.section-title {
+    color: #075337;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #075337;
+    margin: 22px 0 12px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #c9a344;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.total-box {
+    background: #eaf3ed;
+    padding: 15px;
+    border-left: 4px solid #087247;
+    margin: 18px 0;
+    font-weight: bold;
+}
+
+.hotel-box {
+    background: #f4f7f2;
+    padding: 18px;
+    border-radius: 8px;
+    margin-top: 18px;
+}
+
+#hotelResults {
+    display: none;
+}
+
+.price-box {
+    background: #fff6df;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.facility-card {
+    background: #f4f7f2;
+    border-left: 4px solid #c9a344;
+    border-radius: 7px;
+    padding: 18px;
+    margin: 18px 0;
+}
+
+.facility-card h3 {
+    margin-top: 0;
+    color: #075337;
+}
+
+.facility-card ul {
+    padding-left: 22px;
+    line-height: 2;
+}
+
+.facility-note {
+    color: #666;
+    font-size: 13px;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+.success {
+    text-align: center;
+    padding: 55px 25px;
+}
+
+.success h2 {
+    color: #087247;
+    margin-bottom: 20px;
+}
+
+.success p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #063d2b;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer h3 {
+    color: #e8c56b;
+}
+
+footer p {
+    margin: 10px;
+}
+
+footer a {
+    color: #f0d17c;
+    text-decoration: none;
+}
+
+.contact-links {
+    line-height: 2;
+}
+
+@media(max-width:600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>کاروان نور عمرہ گروپ</h1>
+    <p>YOUR JOURNEY, OUR RESPONSIBILITY</p>
+</header>
+
+
+<!-- HOME PAGE -->
+<section id="home" class="page active">
+
+    <div class="hero">
+        <div>
+            <h2>Book Your Umrah Journey</h2>
+
+            <p>
+                Choose Your Package and Begin Your Blessed Journey
+            </p>
+
+            <button onclick="showPage('traveler')">
+                BOOK NOW
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Welcome to Karwan Noor
+        </h2>
+
+        <p style="text-align:center;line-height:1.8;">
+            We help you plan your Umrah journey with different hotel
+            categories and travel options. Explore our available
+            facilities and contact our team for further details.
+        </p>
+
+        <div style="text-align:center;margin-top:20px;">
+
+            <button onclick="showPage('facilities')">
+                FACILITIES
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FACILITIES PAGE -->
+<section id="facilities" class="page">
+
+<div class="container">
+
+    <h2 class="section-title">
+        Available Facilities
+    </h2>
+
+
+    <!-- AVAILABLE AIRLINES -->
+
+    <div class="facility-card">
+
+        <h3>Available Airlines</h3>
+
+        <ul>
+            <li>Saudi Airlines</li>
+            <li>PIA</li>
+            <li>Airblue</li>
+            <li>Fly Jinnah</li>
+            <li>Qatar Airways</li>
+            <li>Emirates</li>
+            <li>Etihad Airways</li>
+        </ul>
+
+    </div>
+
+
+    <!-- AVAILABLE HOTELS -->
+
+    <div class="facility-card">
+
+        <h3>Available Hotels</h3>
+
+        <h4>Makkah Hotels</h4>
+
+        <ul>
+            <li>Makkah Hotel 1 (Sample)</li>
+            <li>Makkah Hotel 2 (Sample)</li>
+            <li>Makkah Hotel 3 (Sample)</li>
+        </ul>
+
+
+        <h4 style="margin-top:18px;">Madinah Hotels</h4>
+
+        <ul>
+            <li>Madinah Hotel 1 (Sample)</li>
+            <li>Madinah Hotel 2 (Sample)</li>
+            <li>Madinah Hotel 3 (Sample)</li>
+        </ul>
+
+    </div>
+
+
+    <!-- AVAILABLE ZIYARAT -->
+
+    <div class="facility-card">
+
+        <h3>Available Ziyarat</h3>
+
+        <ul>
+            <li>Makkah Ziyarat</li>
+            <li>Madinah Ziyarat</li>
+            <li>Historical Places Visit</li>
+        </ul>
+
+    </div>
+
+
+    <!-- UMRAH VISA SERVICES - NEW SECTION -->
+
+    <div class="facility-card">
+
+        <h3>Umrah Visa Services</h3>
+
+        <ul>
+            <li>Umrah Visa Assistance</li>
+            <li>Visa Application Guidance</li>
+            <li>Visa Documentation Support</li>
+            <li>Visa Processing Assistance</li>
+        </ul>
+
+        <p class="facility-note">
+            Contact our team for Umrah visa requirements,
+            documents and processing details. Visa issuance
+            is subject to the applicable requirements and approval.
+        </p>
+
+    </div>
+
+
+    <p class="facility-note">
+        Please contact our team for the latest facilities,
+        hotel details and availability.
+    </p>
+
+
+    <div style="text-align:center;margin-top:25px;">
+
+        <button onclick="showPage('traveler')">
+            BOOK NOW
+        </button>
+
+        <button onclick="showPage('home')">
+            BACK TO HOME
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- TRAVELER DETAILS PAGE -->
+<section id="traveler" class="page">
+
+<div class="container">
+
+    <h2 class="section-title">
+        Traveler Details
+    </h2>
+
+    <div class="grid">
+
+        <div class="form-group">
+            <label>Adults</label>
+            <input type="number" id="adults" min="0" value="0">
+        </div>
+
+        <div class="form-group">
+            <label>Children</label>
+            <input type="number" id="children" min="0" value="0">
+        </div>
+
+        <div class="form-group">
+            <label>Infants</label>
+            <input type="number" id="infants" min="0" value="0">
+        </div>
+
+    </div>
+
+    <div class="total-box">
+        Total Travelers:
+        <span id="totalTravelers">0</span>
+    </div>
+
+
+    <h3>Travel Dates</h3>
+
+    <div class="grid">
+
+        <div class="form-group">
+            <label>Departure Date</label>
+            <input type="date" id="departure" required>
+        </div>
+
+        <div class="form-group">
+            <label>Return Date</label>
+            <input type="date" id="returnDate" required>
+        </div>
+
+    </div>
+
+
+    <h3>Airline Selection</h3>
+
+    <div class="form-group">
+
+        <label>Select Airline</label>
+
+        <select id="airline" required onchange="toggleOtherAirline()">
+
+            <option value="">Select Airline</option>
+            <option>Saudi Airlines</option>
+            <option>PIA</option>
+            <option>Airblue</option>
+            <option>Fly Jinnah</option>
+            <option>Qatar Airways</option>
+            <option>Emirates</option>
+            <option>Etihad Airways</option>
+            <option value="Other">Other</option>
+
+        </select>
+
+    </div>
+
+
+    <div class="form-group" id="otherAirlineBox" style="display:none;">
+
+        <label>Enter Airline Name</label>
+
+        <input type="text" id="otherAirline" placeholder="Airline Name">
+
+    </div>
+
+
+    <h3>Additional Services</h3>
+
+    <div class="form-group">
+
+        <label>Transportation</label>
+
+        <select id="transport" required>
+
+            <option value="">Select Transportation</option>
+            <option value="Public Transport">Public Transport</option>
+            <option value="Private">Private</option>
+
+        </select>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Ziyarat</label>
+
+        <select id="ziyarat" required>
+
+            <option value="">Select Ziyarat Option</option>
+            <option value="Included">Included</option>
+            <option value="Not Included">Not Included</option>
+
+        </select>
+
+    </div>
+
+
+    <button onclick="goToHotels()">
+        CONTINUE TO HOTELS
+    </button>
+
+    <button onclick="showPage('home')">
+        BACK
+    </button>
+
+</div>
+</section>
+
+
+<!-- HOTEL SELECTION PAGE -->
+<section id="hotels" class="page">
+
+<div class="container">
+
+    <h2 class="section-title">
+        Hotel Selection & Booking
+    </h2>
+
+    <h3>Select Your Package Category</h3>
+
+    <div class="form-group">
+
+        <label>Hotel Package Category</label>
+
+        <select id="category">
+
+            <option value="">Choose Package Category</option>
+            <option value="Economy">Economy</option>
+            <option value="Economy Plus">Economy Plus</option>
+            <option value="3 Star">3 Star</option>
+            <option value="4 Star">4 Star</option>
+            <option value="5 Star">5 Star</option>
+
+        </select>
+
+    </div>
+
+
+    <button type="button" onclick="showHotels()">
+        GO TO HOTEL
+    </button>
+
+
+    <div id="hotelResults" class="hotel-box">
+
+        <h3 id="selectedCategory"></h3>
+
+        <div class="form-group">
+
+            <label>Makkah Hotel</label>
+
+            <select id="makkahHotel">
+                <option value="">Select Makkah Hotel</option>
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Madinah Hotel</label>
+
+            <select id="madinahHotel">
+                <option value="">Select Madinah Hotel</option>
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <h3>Customer Information</h3>
+
+    <form id="bookingForm">
+
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" name="Full Name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Customer Email</label>
+            <input type="email" name="Customer Email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Mobile Number</label>
+            <input type="tel" name="Mobile Number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Additional Message</label>
+            <textarea name="Additional Message" rows="4"></textarea>
+        </div>
+
+
+        <!-- PACKAGE PRICE -->
+
+        <div class="price-box">
+
+            <div style="font-size:18px;color:#075337;margin-bottom:8px;">
+                Package Price
+            </div>
+
+            <div style="font-size:24px;color:#9a7625;letter-spacing:1px;">
+                PRICE ON REQUEST
+            </div>
+
+            <p style="font-weight:normal;margin-top:10px;line-height:1.6;">
+                Contact us for the latest package price and details.
+            </p>
+
+        </div>
+
+
+        <!-- HIDDEN BOOKING INFORMATION -->
+
+        <input type="hidden" name="Adults" id="emailAdults">
+        <input type="hidden" name="Children" id="emailChildren">
+        <input type="hidden" name="Infants" id="emailInfants">
+        <input type="hidden" name="Total Travelers" id="emailTotal">
+        <input type="hidden" name="Departure Date" id="emailDeparture">
+        <input type="hidden" name="Return Date" id="emailReturn">
+        <input type="hidden" name="Airline" id="emailAirline">
+        <input type="hidden" name="Transportation" id="emailTransport">
+        <input type="hidden" name="Ziyarat" id="emailZiyarat">
+        <input type="hidden" name="Package Category" id="emailCategory">
+        <input type="hidden" name="Makkah Hotel" id="emailMakkah">
+        <input type="hidden" name="Madinah Hotel" id="emailMadinah">
+
+        <input type="hidden" name="Booking Status"
+        value="Request Received - Not Confirmed">
+
+        <input type="hidden" name="_subject"
+        value="New Umrah Booking Request - Karwan Noor">
+
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+
+
+        <button type="submit" id="submitButton">
+            SUBMIT BOOKING REQUEST
+        </button>
+
+    </form>
+
+    <button onclick="showPage('traveler')">
+        BACK
+    </button>
+
+</div>
+</section>
+
+
+<!-- SUCCESS PAGE -->
+<section id="success" class="page">
+
+<div class="container success">
+
+    <h2>Booking Request Received!</h2>
+
+    <h3>Thank You for Your Booking Request!</h3>
+
+    <p>
+        Your booking request has been received successfully.
+    </p>
+
+    <p>
+        Our team will contact you on your registered mobile number
+        or email address to share the final package details and
+        total payment.
+    </p>
+
+    <p>
+        <strong>Your booking is not confirmed yet.</strong>
+    </p>
+
+    <button onclick="showPage('home')">
+        BACK TO HOME
+    </button>
+
+</div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<footer id="contact">
+
+    <h3>Contact Us</h3>
+
+    <div class="contact-links">
+
+        <p>
+            Email:
+            <a href="mailto:karwanenoorumrah@gmail.com">
+                karwanenoorumrah@gmail.com
+            </a>
+        </p>
+
+        <p>
+            Mobile 1:
+            <a href="tel:03335815023">03335815023</a>
+        </p>
+
+        <p>
+            Mobile 2:
+            <a href="tel:03125815023">03125815023</a>
+        </p>
+
+    </div>
+
+    <p>Karwan Noor Umrah Group</p>
+    <p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+
+<script>
+
+// PAGE NAVIGATION
+
+function showPage(pageId) {
+
+    document.querySelectorAll(".page").forEach(page => {
+        page.classList.remove("active");
+    });
+
+    document.getElementById(pageId).classList.add("active");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
+// TRAVELER COUNT
+
+function updateTotal() {
+
+    let adults =
+        Number(document.getElementById("adults").value) || 0;
+
+    let children =
+        Number(document.getElementById("children").value) || 0;
+
+    let infants =
+        Number(document.getElementById("infants").value) || 0;
+
+    let total = adults + children + infants;
+
+    document.getElementById("totalTravelers").textContent = total;
+
+}
+
+
+["adults", "children", "infants"].forEach(id => {
+
+    document.getElementById(id).addEventListener(
+        "input",
+        updateTotal
+    );
+
+});
+
+
+// OTHER AIRLINE
+
+function toggleOtherAirline() {
+
+    let airline = document.getElementById("airline").value;
+
+    let box = document.getElementById("otherAirlineBox");
+
+    let input = document.getElementById("otherAirline");
+
+    box.style.display = airline === "Other" ? "block" : "none";
+
+    input.required = airline === "Other";
+
+}
+
+
+// TRAVELER VALIDATION
+
+function goToHotels() {
+
+    let adults =
+        Number(document.getElementById("adults").value) || 0;
+
+    let children =
+        Number(document.getElementById("children").value) || 0;
+
+    let infants =
+        Number(document.getElementById("infants").value) || 0;
+
+    let total = adults + children + infants;
+
+    if (total < 1) {
+        alert("Please enter at least one traveler.");
+        return;
+    }
+
+    let departure = document.getElementById("departure").value;
+
+    let returnDate = document.getElementById("returnDate").value;
+
+    if (!departure || !returnDate) {
+        alert("Please select departure and return dates.");
+        return;
+    }
+
+    if (returnDate <= departure) {
+        alert("Return date must be after departure date.");
+        return;
+    }
+
+    let airline = document.getElementById("airline").value;
+
+    if (!airline) {
+        alert("Please select an airline.");
+        return;
+    }
+
+    if (
+        airline === "Other" &&
+        !document.getElementById("otherAirline").value.trim()
+    ) {
+        alert("Please enter the airline name.");
+        return;
+    }
+
+    if (!document.getElementById("transport").value) {
+        alert("Please select transportation.");
+        return;
+    }
+
+    if (!document.getElementById("ziyarat").value) {
+        alert("Please select Ziyarat option.");
+        return;
+    }
+
+    showPage("hotels");
+
+}
+
+
+// HOTEL OPTIONS BY CATEGORY
+
+function showHotels() {
+
+    let category = document.getElementById("category").value;
+
+    if (!category) {
+        alert("Please select a package category first.");
+        return;
+    }
+
+    let makkah = document.getElementById("makkahHotel");
+
+    let madinah = document.getElementById("madinahHotel");
+
+    makkah.innerHTML =
+        '<option value="">Select Makkah Hotel</option>';
+
+    madinah.innerHTML =
+        '<option value="">Select Madinah Hotel</option>';
+
+    let hotelOptions = [
+        category + " - Makkah Hotel 1 (Sample)",
+        category + " - Makkah Hotel 2 (Sample)",
+        category + " - Makkah Hotel 3 (Sample)"
+    ];
+
+    let madinahOptions = [
+        category + " - Madinah Hotel 1 (Sample)",
+        category + " - Madinah Hotel 2 (Sample)",
+        category + " - Madinah Hotel 3 (Sample)"
+    ];
+
+    hotelOptions.forEach(name => {
+
+        let option = document.createElement("option");
+
+        option.value = name;
+
+        option.textContent = name;
+
+        makkah.appendChild(option);
+
+    });
+
+    madinahOptions.forEach(name => {
+
+        let option = document.createElement("option");
+
+        option.value = name;
+
+        option.textContent = name;
+
+        madinah.appendChild(option);
+
+    });
+
+    document.getElementById("selectedCategory").textContent =
+        category + " Package Hotels";
+
+    document.getElementById("hotelResults").style.display = "block";
+
+}
+
+
+// FORM SUBMISSION
+
+document.getElementById("bookingForm").addEventListener(
+    "submit",
+    async function(event) {
+
+        event.preventDefault();
+
+        let category =
+            document.getElementById("category").value;
+
+        let makkah =
+            document.getElementById("makkahHotel").value;
+
+        let madinah =
+            document.getElementById("madinahHotel").value;
+
+        if (!category || !makkah || !madinah) {
+            alert("Please select your package category and both hotels.");
+            return;
+        }
+
+        let adults =
+            Number(document.getElementById("adults").value) || 0;
+
+        let children =
+            Number(document.getElementById("children").value) || 0;
+
+        let infants =
+            Number(document.getElementById("infants").value) || 0;
+
+        let total = adults + children + infants;
+
+        document.getElementById("emailAdults").value = adults;
+
+        document.getElementById("emailChildren").value = children;
+
+        document.getElementById("emailInfants").value = infants;
+
+        document.getElementById("emailTotal").value = total;
+
+        document.getElementById("emailDeparture").value =
+            document.getElementById("departure").value;
+
+        document.getElementById("emailReturn").value =
+            document.getElementById("returnDate").value;
+
+        let airline = document.getElementById("airline").value;
+
+        if (airline === "Other") {
+            airline = document.getElementById("otherAirline").value.trim();
+        }
+
+        document.getElementById("emailAirline").value = airline;
+
+        document.getElementById("emailTransport").value =
+            document.getElementById("transport").value;
+
+        document.getElementById("emailZiyarat").value =
+            document.getElementById("ziyarat").value;
+
+        document.getElementById("emailCategory").value = category;
+
+        document.getElementById("emailMakkah").value = makkah;
+
+        document.getElementById("emailMadinah").value = madinah;
+
+        let submitButton =
+            document.getElementById("submitButton");
+
+        submitButton.disabled = true;
+
+        submitButton.textContent = "SENDING REQUEST...";
+
+        try {
+
+            let response = await fetch(
+                "https://formsubmit.co/ajax/karwanenoorumrah@gmail.com",
+                {
+                    method: "POST",
+                    body: new FormData(this),
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                }
+            );
+
+            let result = await response.json();
+
+            if (response.ok && result.success) {
+
+                this.reset();
+
+                document.getElementById("hotelResults").style.display =
+                    "none";
+
+                updateTotal();
+
+                showPage("success");
+
+            } else {
+
+                alert("Your request could not be submitted. Please try again.");
+
+            }
+
+        } catch (error) {
+
+            alert(
+                "Submission failed. Please check your internet connection and try again."
+            );
+
+        } finally {
+
+            submitButton.disabled = false;
+
+            submitButton.textContent = "SUBMIT BOOKING REQUEST";
+
+        }
+
+    }
+
+);
+
+</script>
+
+</body>
+</html>
