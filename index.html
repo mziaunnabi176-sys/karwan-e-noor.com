@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karwan Noor Umrah Group</title>
+<title>Karwan-e-Noor Umrah</title>
 
 <style>
 * {
@@ -29,7 +29,7 @@ header {
 
 header h1 {
     color: #e8c56b;
-    font-size: 30px;
+    font-size: 34px;
 }
 
 header p {
@@ -161,10 +161,21 @@ input:focus, select:focus, textarea:focus {
 
 .price-box {
     background: #fff6df;
-    padding: 15px;
+    padding: 18px;
     margin: 20px 0;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.booking-note {
+    background: #fff1e8;
+    border-left: 4px solid #c46b32;
+    padding: 16px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color: #713b20;
+    line-height: 1.7;
+    font-weight: normal;
 }
 
 .facility-card {
@@ -252,21 +263,18 @@ footer a {
 <body>
 
 <header>
-    <h1>کاروان نور عمرہ گروپ</h1>
+    <h1>کاروانِ نور</h1>
     <p>YOUR JOURNEY, OUR RESPONSIBILITY</p>
 </header>
 
-
 <!-- HOME PAGE -->
+
 <section id="home" class="page active">
 
     <div class="hero">
         <div>
             <h2>Book Your Umrah Journey</h2>
-
-            <p>
-                Choose Your Package and Begin Your Blessed Journey
-            </p>
+            <p>Choose Your Package and Begin Your Blessed Journey</p>
 
             <button onclick="showPage('traveler')">
                 BOOK NOW
@@ -277,7 +285,7 @@ footer a {
     <div class="container">
 
         <h2 class="section-title">
-            Welcome to Karwan Noor
+            Welcome to Karwan-e-Noor
         </h2>
 
         <p style="text-align:center;line-height:1.8;">
@@ -287,34 +295,25 @@ footer a {
         </p>
 
         <div style="text-align:center;margin-top:20px;">
-
             <button onclick="showPage('facilities')">
                 FACILITIES
             </button>
-
         </div>
 
     </div>
 
 </section>
 
-
 <!-- FACILITIES PAGE -->
+
 <section id="facilities" class="page">
 
 <div class="container">
 
-    <h2 class="section-title">
-        Available Facilities
-    </h2>
-
-
-    <!-- AVAILABLE AIRLINES -->
+    <h2 class="section-title">Available Facilities</h2>
 
     <div class="facility-card">
-
         <h3>Available Airlines</h3>
-
         <ul>
             <li>Saudi Airlines</li>
             <li>PIA</li>
@@ -324,27 +323,20 @@ footer a {
             <li>Emirates</li>
             <li>Etihad Airways</li>
         </ul>
-
     </div>
-
-
-    <!-- AVAILABLE HOTELS -->
 
     <div class="facility-card">
 
         <h3>Available Hotels</h3>
 
         <h4>Makkah Hotels</h4>
-
         <ul>
             <li>Makkah Hotel 1 (Sample)</li>
             <li>Makkah Hotel 2 (Sample)</li>
             <li>Makkah Hotel 3 (Sample)</li>
         </ul>
 
-
         <h4 style="margin-top:18px;">Madinah Hotels</h4>
-
         <ul>
             <li>Madinah Hotel 1 (Sample)</li>
             <li>Madinah Hotel 2 (Sample)</li>
@@ -352,24 +344,6 @@ footer a {
         </ul>
 
     </div>
-
-
-    <!-- AVAILABLE ZIYARAT -->
-
-    <div class="facility-card">
-
-        <h3>Available Ziyarat</h3>
-
-        <ul>
-            <li>Makkah Ziyarat</li>
-            <li>Madinah Ziyarat</li>
-            <li>Historical Places Visit</li>
-        </ul>
-
-    </div>
-
-
-    <!-- UMRAH VISA SERVICES - NEW SECTION -->
 
     <div class="facility-card">
 
@@ -385,17 +359,15 @@ footer a {
         <p class="facility-note">
             Contact our team for Umrah visa requirements,
             documents and processing details. Visa issuance
-            is subject to the applicable requirements and approval.
+            is subject to applicable requirements and approval.
         </p>
 
     </div>
-
 
     <p class="facility-note">
         Please contact our team for the latest facilities,
         hotel details and availability.
     </p>
-
 
     <div style="text-align:center;margin-top:25px;">
 
@@ -410,18 +382,15 @@ footer a {
     </div>
 
 </div>
-
 </section>
 
-
 <!-- TRAVELER DETAILS PAGE -->
+
 <section id="traveler" class="page">
 
 <div class="container">
 
-    <h2 class="section-title">
-        Traveler Details
-    </h2>
+    <h2 class="section-title">Traveler Details</h2>
 
     <div class="grid">
 
@@ -447,7 +416,6 @@ footer a {
         <span id="totalTravelers">0</span>
     </div>
 
-
     <h3>Travel Dates</h3>
 
     <div class="grid">
@@ -463,7 +431,6 @@ footer a {
         </div>
 
     </div>
-
 
     <h3>Airline Selection</h3>
 
@@ -487,15 +454,31 @@ footer a {
 
     </div>
 
-
     <div class="form-group" id="otherAirlineBox" style="display:none;">
 
         <label>Enter Airline Name</label>
-
         <input type="text" id="otherAirline" placeholder="Airline Name">
 
     </div>
 
+    <h3>Room Type Selection</h3>
+
+    <div class="form-group">
+
+        <label>Select Room Type</label>
+
+        <select id="roomType" required>
+
+            <option value="">Select Room Type</option>
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Triple">Triple</option>
+            <option value="Quad">Quad</option>
+            <option value="Sharing">Sharing</option>
+
+        </select>
+
+    </div>
 
     <h3>Additional Services</h3>
 
@@ -513,22 +496,6 @@ footer a {
 
     </div>
 
-
-    <div class="form-group">
-
-        <label>Ziyarat</label>
-
-        <select id="ziyarat" required>
-
-            <option value="">Select Ziyarat Option</option>
-            <option value="Included">Included</option>
-            <option value="Not Included">Not Included</option>
-
-        </select>
-
-    </div>
-
-
     <button onclick="goToHotels()">
         CONTINUE TO HOTELS
     </button>
@@ -540,8 +507,8 @@ footer a {
 </div>
 </section>
 
-
 <!-- HOTEL SELECTION PAGE -->
+
 <section id="hotels" class="page">
 
 <div class="container">
@@ -569,38 +536,31 @@ footer a {
 
     </div>
 
-
     <button type="button" onclick="showHotels()">
         GO TO HOTEL
     </button>
-
 
     <div id="hotelResults" class="hotel-box">
 
         <h3 id="selectedCategory"></h3>
 
         <div class="form-group">
-
             <label>Makkah Hotel</label>
 
             <select id="makkahHotel">
                 <option value="">Select Makkah Hotel</option>
             </select>
-
         </div>
 
         <div class="form-group">
-
             <label>Madinah Hotel</label>
 
             <select id="madinahHotel">
                 <option value="">Select Madinah Hotel</option>
             </select>
-
         </div>
 
     </div>
-
 
     <h3>Customer Information</h3>
 
@@ -626,9 +586,6 @@ footer a {
             <textarea name="Additional Message" rows="4"></textarea>
         </div>
 
-
-        <!-- PACKAGE PRICE -->
-
         <div class="price-box">
 
             <div style="font-size:18px;color:#075337;margin-bottom:8px;">
@@ -639,12 +596,26 @@ footer a {
                 PRICE ON REQUEST
             </div>
 
-            <p style="font-weight:normal;margin-top:10px;line-height:1.6;">
-                Contact us for the latest package price and details.
-            </p>
+            <div class="booking-note">
+
+                <strong>IMPORTANT BOOKING NOTICE</strong>
+
+                <p style="margin-top:8px;">
+                    No payment is required at this stage.
+                    This is only a booking request and your
+                    booking is NOT confirmed yet.
+                </p>
+
+                <p style="margin-top:8px;">
+                    Our team will contact you with the package
+                    details and payment information.
+                    Please do not make any payment until your
+                    booking is officially confirmed by our team.
+                </p>
+
+            </div>
 
         </div>
-
 
         <!-- HIDDEN BOOKING INFORMATION -->
 
@@ -655,8 +626,8 @@ footer a {
         <input type="hidden" name="Departure Date" id="emailDeparture">
         <input type="hidden" name="Return Date" id="emailReturn">
         <input type="hidden" name="Airline" id="emailAirline">
+        <input type="hidden" name="Room Type" id="emailRoomType">
         <input type="hidden" name="Transportation" id="emailTransport">
-        <input type="hidden" name="Ziyarat" id="emailZiyarat">
         <input type="hidden" name="Package Category" id="emailCategory">
         <input type="hidden" name="Makkah Hotel" id="emailMakkah">
         <input type="hidden" name="Madinah Hotel" id="emailMadinah">
@@ -665,11 +636,10 @@ footer a {
         value="Request Received - Not Confirmed">
 
         <input type="hidden" name="_subject"
-        value="New Umrah Booking Request - Karwan Noor">
+        value="New Umrah Booking Request - Karwan-e-Noor">
 
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="true">
-
 
         <button type="submit" id="submitButton">
             SUBMIT BOOKING REQUEST
@@ -684,8 +654,8 @@ footer a {
 </div>
 </section>
 
-
 <!-- SUCCESS PAGE -->
+
 <section id="success" class="page">
 
 <div class="container success">
@@ -705,7 +675,8 @@ footer a {
     </p>
 
     <p>
-        <strong>Your booking is not confirmed yet.</strong>
+        <strong>Your booking is not confirmed yet.
+        No payment is required at this stage.</strong>
     </p>
 
     <button onclick="showPage('home')">
@@ -715,8 +686,8 @@ footer a {
 </div>
 </section>
 
-
 <!-- CONTACT SECTION -->
+
 <footer id="contact">
 
     <h3>Contact Us</h3>
@@ -740,13 +711,17 @@ footer a {
             <a href="tel:03125815023">03125815023</a>
         </p>
 
+        <p>
+            Mobile 3:
+            <a href="tel:03029014271">03029014271</a>
+        </p>
+
     </div>
 
-    <p>Karwan Noor Umrah Group</p>
+    <p>کاروانِ نور</p>
     <p>© 2026 All Rights Reserved</p>
 
 </footer>
-
 
 <script>
 
@@ -767,7 +742,6 @@ function showPage(pageId) {
 
 }
 
-
 // TRAVELER COUNT
 
 function updateTotal() {
@@ -787,7 +761,6 @@ function updateTotal() {
 
 }
 
-
 ["adults", "children", "infants"].forEach(id => {
 
     document.getElementById(id).addEventListener(
@@ -796,7 +769,6 @@ function updateTotal() {
     );
 
 });
-
 
 // OTHER AIRLINE
 
@@ -813,7 +785,6 @@ function toggleOtherAirline() {
     input.required = airline === "Other";
 
 }
-
 
 // TRAVELER VALIDATION
 
@@ -864,20 +835,19 @@ function goToHotels() {
         return;
     }
 
-    if (!document.getElementById("transport").value) {
-        alert("Please select transportation.");
+    if (!document.getElementById("roomType").value) {
+        alert("Please select a room type.");
         return;
     }
 
-    if (!document.getElementById("ziyarat").value) {
-        alert("Please select Ziyarat option.");
+    if (!document.getElementById("transport").value) {
+        alert("Please select transportation.");
         return;
     }
 
     showPage("hotels");
 
 }
-
 
 // HOTEL OPTIONS BY CATEGORY
 
@@ -917,7 +887,6 @@ function showHotels() {
         let option = document.createElement("option");
 
         option.value = name;
-
         option.textContent = name;
 
         makkah.appendChild(option);
@@ -929,7 +898,6 @@ function showHotels() {
         let option = document.createElement("option");
 
         option.value = name;
-
         option.textContent = name;
 
         madinah.appendChild(option);
@@ -942,7 +910,6 @@ function showHotels() {
     document.getElementById("hotelResults").style.display = "block";
 
 }
-
 
 // FORM SUBMISSION
 
@@ -999,11 +966,11 @@ document.getElementById("bookingForm").addEventListener(
 
         document.getElementById("emailAirline").value = airline;
 
+        document.getElementById("emailRoomType").value =
+            document.getElementById("roomType").value;
+
         document.getElementById("emailTransport").value =
             document.getElementById("transport").value;
-
-        document.getElementById("emailZiyarat").value =
-            document.getElementById("ziyarat").value;
 
         document.getElementById("emailCategory").value = category;
 
